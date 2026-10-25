@@ -37,8 +37,8 @@
 ### 2. Instalar y configurar
 
 ```bash
-git clone https://github.com/<tu-usuario>/nexus-osint.git
-cd nexus-osint
+git clone https://github.com/Condor2026/nexus_osint
+cd nexus_osint
 
 python -m venv .venv
 source .venv/bin/activate          # Windows: .venv\Scripts\activate
