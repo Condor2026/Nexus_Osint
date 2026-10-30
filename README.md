@@ -1,5 +1,5 @@
 # Nexus_Osint_X · Command Center v3.1
-
+![TheCondor](NEXSUSX.jpg)
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688)
 ![deck.gl](https://img.shields.io/badge/deck.gl-9.0-00d4ff)
