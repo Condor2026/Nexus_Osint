@@ -5,8 +5,31 @@
 ![deck.gl](https://img.shields.io/badge/deck.gl-9.0-00d4ff)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
+[![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-499848?logo=uvicorn&logoColor=white)](https://www.uvicorn.org/)
+[![SQLite](https://img.shields.io/badge/SQLite-3-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+[![deck.gl](https://img.shields.io/badge/deck.gl-9.0-00D4FF?logo=uber&logoColor=white)](https://deck.gl/)
+[![Chart.js](https://img.shields.io/badge/Chart.js-4.4-FF6384?logo=chartdotjs&logoColor=white)](https://www.chartjs.org/)
+[![Jinja2](https://img.shields.io/badge/Jinja2-templates-B41717?logo=jinja&logoColor=white)](https://jinja.palletsprojects.com/)
+[![WebSocket](https://img.shields.io/badge/WebSocket-live-010101?logo=websocket&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
+[![JWT](https://img.shields.io/badge/JWT-auth-000000?logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-optional-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
+[![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-FF0000?logo=mitre&logoColor=white)](https://attack.mitre.org/)
+[![OSINT](https://img.shields.io/badge/OSINT-110%2B%20sources-00D4FF)](https://en.wikipedia.org/wiki/Open-source_intelligence)
+[![CTI](https://img.shields.io/badge/CTI-threat%20intel-8B5CF6)](https://en.wikipedia.org/wiki/Cyber_threat_intelligence)
+[![Defensive](https://img.shields.io/badge/use-defensive-00FF9F)](https://github.com/Condor2026/Nexus_Osint_X)
+[![Self-hosted](https://img.shields.io/badge/self--hosted-yes-FFBE0B)](https://github.com/Condor2026/Nexus_Osint_X)
+[![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=white)](./LICENSE)
+[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/Condor2026/Nexus_Osint_X)
+[![Last commit](https://img.shields.io/github/last-commit/Condor2026/Nexus_Osint_X?color=00D4FF&label=last%20commit)](https://github.com/Condor2026/Nexus_Osint_X/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/Condor2026/Nexus_Osint_X?color=8B5CF6)](https://github.com/Condor2026/Nexus_Osint_X)
+[![Stars](https://img.shields.io/github/stars/Condor2026/Nexus_Osint_X?style=social)](https://github.com/Condor2026/Nexus_Osint_X/stargazers)
+[![Issues](https://img.shields.io/github/issues/Condor2026/Nexus_Osint_X?color=FF005C)](https://github.com/Condor2026/Nexus_Osint_X/issues)
+[![PRs welcome](https://img.shields.io/badge/PRs-welcome-FF69B4)](https://github.com/Condor2026/Nexus_Osint_X/pulls)
+[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows- lightgrey?logo=linux&logoColor=white)](#)
+[![Docker ready](https://img.shields.io/badge/docker-ready-2496ED?logo=docker&logoColor=white)](#)
 
-**Topics:** `osint` · `threat-intelligence` · `cybersecurity` · `dashboard` · `deck-gl` · `mitre-attack` · `cti` · `defensive-security` · `fastapi` · `python` · `globe` · `3d-visualization` · `sqlite` · `telegram-bot` · `ioc` · `threat-hunting` · `security-tools` · `open-source-intelligence` · `cyber-threat-intelligence` · `self-hosted`
 
 > Radar OSINT autohospedado: 110+ fuentes públicas, globo 3D con deck.gl, correlación entre dominios, MITRE ATT&CK, panel JARVIS y bot de Telegram. Todo en un único `nexus.py` ejecutable con `uvicorn`.
 
