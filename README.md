@@ -8,6 +8,14 @@
 ![Deck.gl](https://img.shields.io/badge/deck.gl-9.0-FF6B6B)
 
 ---
+## ⚠️ Descargo de responsabilidad
+
+- Todos los indicadores (IPs, dominios, hashes) provienen de **fuentes públicas**: CERTs oficiales (GovCERT.ch, CISA), prensa, canales públicos de Telegram, APIs públicas (abuse.ch, Cloudflare Radar).
+- **Sin verificación independiente.** La atribución a grupos es lo que dicen las fuentes públicas, no una conclusión forense.
+- **Uso permitido:** investigación defensiva, threat intelligence, educación, SOC.
+- **Uso prohibido:** ataques activos, escaneos no autorizados, acciones legales basadas en estos datos, acoso a personas.
+- Los nombres de grupos son **públicos y documentados** por CERTs y prensa (Killnet, NoName057(16), Lazarus, APT28…). No son acusaciones privadas.
+- Si eres titular de una IP listada y crees que es un error, abre un issue y se revisa.
 
 ## ✨ Qué hace
 
