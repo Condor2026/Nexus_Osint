@@ -1,6 +1,15 @@
 # Nexus_Osint_X · Command Center v3.1
 
+![Python](https://img.shields.io/badge/python-3.11%2B-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688)
+![deck.gl](https://img.shields.io/badge/deck.gl-9.0-00d4ff)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+**Topics:** `osint` · `threat-intelligence` · `cybersecurity` · `dashboard` · `deck-gl` · `mitre-attack` · `cti` · `defensive-security` · `fastapi` · `python` · `globe` · `3d-visualization` · `sqlite` · `telegram-bot` · `ioc` · `threat-hunting` · `security-tools` · `open-source-intelligence` · `cyber-threat-intelligence` · `self-hosted`
+
 > Radar OSINT autohospedado: 110+ fuentes públicas, globo 3D con deck.gl, correlación entre dominios, MITRE ATT&CK, panel JARVIS y bot de Telegram. Todo en un único `nexus.py` ejecutable con `uvicorn`.
+
 
 ---
 
