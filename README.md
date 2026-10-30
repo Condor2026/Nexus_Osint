@@ -27,8 +27,6 @@
 [![Stars](https://img.shields.io/github/stars/Condor2026/Nexus_Osint_X?style=social)](https://github.com/Condor2026/Nexus_Osint_X/stargazers)
 [![Issues](https://img.shields.io/github/issues/Condor2026/Nexus_Osint_X?color=FF005C)](https://github.com/Condor2026/Nexus_Osint_X/issues)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-FF69B4)](https://github.com/Condor2026/Nexus_Osint_X/pulls)
-[![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows- lightgrey?logo=linux&logoColor=white)](#)
-[![Docker ready](https://img.shields.io/badge/docker-ready-2496ED?logo=docker&logoColor=white)](#)
 
 
 > Radar OSINT autohospedado: 110+ fuentes públicas, globo 3D con deck.gl, correlación entre dominios, MITRE ATT&CK, panel JARVIS y bot de Telegram. Todo en un único `nexus.py` ejecutable con `uvicorn`.
