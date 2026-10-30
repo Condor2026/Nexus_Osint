@@ -297,12 +297,14 @@ Overlay de análisis global (`j` o botón **JARVIS**) con:
 Auth: `Authorization: Bearer <jwt>` o HTTP Basic. Desde `127.0.0.1` sin proxy el dashboard no pide login (`NEXUS_LOCAL_NOAUTH=1`).
 
 ---
+## 🤖 Bot de Telegram (experimental)
 
-## 🤖 Bot de Telegram
+> ⚠️ **En pruebas.** Los comandos funcionan, pero el bot puede cambiar entre versiones. No lo uses como único canal de alertas en producción.
 
-Comandos: `/start`, `/help`, `/brief`, `/sweep`, `/stats`, `/top`, `/health`, `/anomalies`, `/export`, `/search <q>`, `/domains`, `/trends`, `/watch`.
+Comandos previstos: `/start`, `/help`, `/brief`, `/sweep`, `/stats`, `/top`, `/health`, `/anomalies`, `/export`, `/search <q>`, `/domains`, `/trends`, `/watch`.
 
-Requiere `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID`. Las alertas se disparan por C2 nuevos, DDoS/malware ALTA/CRÍTICA, anomalías y top de correlaciones.
+Requiere `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` en `.env`. Sin ellos, el bot simplemente no arranca (el resto del sistema sigue funcionando).
+
 
 ---
 
