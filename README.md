@@ -1,10 +1,8 @@
 # Nexus_Osint_X · Command Center v3.1
 ![TheCondor](NEXSUSX.jpg)
-![Python](https://img.shields.io/badge/python-3.11%2B-blue)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688)
-![deck.gl](https://img.shields.io/badge/deck.gl-9.0-00d4ff)
-![License](https://img.shields.io/badge/license-MIT-green)
-![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+> **Prototipo** de radar OSINT autohospedado: 110+ fuentes públicas, globo 3D con deck.gl, correlación entre dominios, MITRE ATT&CK, panel J.A.R.V.I.S y bot de Telegram (sin probar). Todo en un único `nexus.py` ejecutable con `uvicorn`.
+
 [![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-499848?logo=uvicorn&logoColor=white)](https://www.uvicorn.org/)
@@ -14,23 +12,23 @@
 [![Jinja2](https://img.shields.io/badge/Jinja2-templates-B41717?logo=jinja&logoColor=white)](https://jinja.palletsprojects.com/)
 [![WebSocket](https://img.shields.io/badge/WebSocket-live-010101?logo=websocket&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 [![JWT](https://img.shields.io/badge/JWT-auth-000000?logo=jsonwebtokens&logoColor=white)](https://jwt.io/)
+[![Telegram](https://img.shields.io/badge/Telegram-sin%20probar-26A5E4?logo=telegram&logoColor=white)](https://core.telegram.org/bots)
 [![OpenAI](https://img.shields.io/badge/OpenAI-optional-412991?logo=openai&logoColor=white)](https://platform.openai.com/)
 [![MITRE ATT&CK](https://img.shields.io/badge/MITRE-ATT%26CK-FF0000?logo=mitre&logoColor=white)](https://attack.mitre.org/)
 [![OSINT](https://img.shields.io/badge/OSINT-110%2B%20sources-00D4FF)](https://en.wikipedia.org/wiki/Open-source_intelligence)
 [![CTI](https://img.shields.io/badge/CTI-threat%20intel-8B5CF6)](https://en.wikipedia.org/wiki/Cyber_threat_intelligence)
 [![Defensive](https://img.shields.io/badge/use-defensive-00FF9F)](https://github.com/Condor2026/Nexus_Osint_X)
 [![Self-hosted](https://img.shields.io/badge/self--hosted-yes-FFBE0B)](https://github.com/Condor2026/Nexus_Osint_X)
+[![Prototype](https://img.shields.io/badge/status-prototype-orange)](https://github.com/Condor2026/Nexus_Osint_X)
 [![License](https://img.shields.io/badge/License-MIT-green?logo=opensourceinitiative&logoColor=white)](./LICENSE)
-[![Status](https://img.shields.io/badge/status-active-brightgreen)](https://github.com/Condor2026/Nexus_Osint_X)
 [![Last commit](https://img.shields.io/github/last-commit/Condor2026/Nexus_Osint_X?color=00D4FF&label=last%20commit)](https://github.com/Condor2026/Nexus_Osint_X/commits/main)
 [![Repo size](https://img.shields.io/github/repo-size/Condor2026/Nexus_Osint_X?color=8B5CF6)](https://github.com/Condor2026/Nexus_Osint_X)
 [![Stars](https://img.shields.io/github/stars/Condor2026/Nexus_Osint_X?style=social)](https://github.com/Condor2026/Nexus_Osint_X/stargazers)
+[![Forks](https://img.shields.io/github/forks/Condor2026/Nexus_Osint_X?style=social)](https://github.com/Condor2026/Nexus_Osint_X/network/members)
 [![Issues](https://img.shields.io/github/issues/Condor2026/Nexus_Osint_X?color=FF005C)](https://github.com/Condor2026/Nexus_Osint_X/issues)
 [![PRs welcome](https://img.shields.io/badge/PRs-welcome-FF69B4)](https://github.com/Condor2026/Nexus_Osint_X/pulls)
 
-
-> Radar OSINT autohospedado: 110+ fuentes públicas, globo 3D con deck.gl, correlación entre dominios, MITRE ATT&CK, panel JARVIS y bot de Telegram. Todo en un único `nexus.py` ejecutable con `uvicorn`.
-
+**Topics:** `osint` · `threat-intelligence` · `cybersecurity` · `dashboard` · `deck-gl` · `mitre-attack` · `cti` · `defensive-security` · `fastapi` · `python` · `globe` · `3d-visualization` · `sqlite` · `ioc` · `threat-hunting` · `security-tools` · `open-source-intelligence` · `cyber-threat-intelligence` · `self-hosted`
 
 ---
 
@@ -42,6 +40,7 @@
 - **Uso prohibido:** ataques activos, escaneos no autorizados, acciones legales basadas en estos datos, acoso a personas.
 - Los nombres de grupos son **públicos y documentados** por CERTs y prensa (Killnet, NoName057(16), Lazarus, APT28…). No son acusaciones privadas.
 - Si eres titular de una IP listada y crees que es un error, abre un issue y se revisa.
+- **Este es un prototipo.** No todas las partes están igual de maduras (ver "Estado del proyecto"). Lo que no funciona, se irá arreglando.
 
 ### Lo que Nexus_Osint_X NO hace
 
@@ -55,6 +54,28 @@
 - ❌ No verifica independientemente las atribuciones: refleja lo que dice la fuente.
 
 **Nexus_Osint_X es un radar, no un simulador.** Si buscas un war-game o un generador de escenarios, esta no es tu herramienta.
+
+---
+
+## 🚧 Estado del proyecto: prototipo
+
+Nexus_Osint_X es un **prototipo funcional**, hecho con el tiempo y los medios disponibles. **Hice todo lo que pude** con lo que tenía, priorizando que el núcleo (recolección, mapa, correlación, export) funcionara antes que los extras.
+
+| Componente | Estado | Notas |
+|---|---|---|
+| Recolección de fuentes (110+) | ✅ Funciona | Barrido automático cada 15 min; fuentes lentas en segundo plano |
+| Globo 3D / mapa plano (deck.gl) | ✅ Funciona | Instancia única, sin recrear WebGL al filtrar |
+| Correlación, anomalías, ATT&CK | ✅ Funciona | Scoring ponderado + decaimiento temporal |
+| Panel JARVIS | ✅ Funciona | Índice de amenaza, radar ATT&CK, timeline |
+| Export (12 formatos) | ✅ Funciona | CSV, JSON, NDJSON, GeoJSON, KML, XLSX, MD, HTML, IPs, grupos, ZIP |
+| Detector de denuncias (Telegram + RSS) | 🟡 En pruebas | Puede fallar si Telegram limita o un canal cambia de formato |
+| **Bot de Telegram** | ⚠️ **Sin probar** | **No se sabe si funciona.** El código está, pero no se ha ejecutado de principio a fin. **Se arreglará otro día.** |
+| LLM (resumen) | 🟡 Opcional | Requiere `OPENAI_API_KEY`; sin ella, devuelve "no disponible" |
+| War-gaming / simulación | ❌ No existe | No está previsto (ver Filosofía) |
+
+**Sobre el bot de Telegram:** el código está escrito, pero **no se ha probado**. No sé si arranca, si los comandos responden o si el polling falla. **No lo uses como canal de alertas en producción.** Cuando tenga tiempo, lo probaré y lo arreglaré. Mientras tanto, el resto del sistema funciona sin él: si no defines `TELEGRAM_BOT_TOKEN`, el bot simplemente no arranca y todo lo demás sigue igual.
+
+**Sobre las vulnerabilidades:** hice lo que pude con lo que sé. Las mitigaciones aplicadas están en la sección "Seguridad" de abajo. No es una auditoría formal; si encuentras algo, abre un issue o un aviso privado (ver `SECURITY.md`).
 
 ---
 
@@ -72,7 +93,7 @@
 - **Circuit breaker** por fuente: 5 fallos seguidos → pausada 5 min.
 - **WebSocket** para actualizaciones en vivo.
 - **Export** en 12 formatos: CSV, JSON, NDJSON, GeoJSON, KML, XLSX, Markdown, HTML, lista de IPs, IPs de grupos (CSV/JSON), ZIP.
-- **Bot de Telegram** con 13 comandos e inline keyboards.
+- **Bot de Telegram** ⚠️ **sin probar** (ver "Estado del proyecto").
 - **LLM opcional** con 3 prompts y caché (si defines `OPENAI_API_KEY`).
 - **Scheduler** con health monitoring por fuente y retención automática.
 
@@ -114,6 +135,8 @@ python nexus.py
 
 El primer barrido arranca solo en segundo plano. La BD (`nexus.db`) se crea en el primer arranque y se migra automáticamente si ya existía de una versión anterior.
 
+**Nota:** el host está fijado a `127.0.0.1` por defecto (`NEXUS_HOST`). No se puede poner `0.0.0.0` por error: tendrías que definirlo a propósito en `.env` o editar el `.py`. Si el puerto 8000 está ocupado, usa el siguiente libre (8001, 8002…) y lo dice en el log.
+
 ---
 
 ## 🔑 Fuentes y claves
@@ -134,7 +157,7 @@ Todas las claves son **opcionales**: sin ellas, la fuente simplemente devuelve 0
 | ReliefWeb | `RELIEFWEB_APPNAME` | https://apidoc.reliefweb.int/ |
 | OpenSanctions | `OPENSANCTIONS_API_KEY` | https://www.opensanctions.org/api/ |
 | Ransomware.live | `RANSOMWARE_LIVE_KEY` | https://www.ransomware.live/ |
-| Telegram | `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` | @BotFather · @userinfobot |
+| Telegram (⚠️ sin probar) | `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` | @BotFather · @userinfobot |
 | LLM | `OPENAI_API_KEY` | https://platform.openai.com/api-keys |
 
 Las fuentes sin clave (Feodo, CISA KEV, SANS ISC, Blocklist.de, ET Compromised, Spamhaus DROP, SSLBL, OpenPhish, RSS de seguridad, GDELT, USGS, EONET, NOAA, WHO, OFAC, FBI Wanted, INTERPOL Red Notices, portales de crimen urbano, etc.) funcionan **desde el primer minuto**.
@@ -195,6 +218,25 @@ Nexus_Osint_X es **OSINT: observación de lo que pasa**, no planificación de lo
 **Por qué:** en OSINT, **un dato real con fuente vale más que cien escenarios generados**. Mezclar ficción con señal real convierte el radar en un generador de rumores. Si quieres un simulador de red team, Nexus_Osint_X no es tu herramienta.
 
 **Trazabilidad:** cada punto del mapa tiene `source`, `url`, `timestamp` y `raw_hash` (SHA256). Si no se puede verificar, no se muestra.
+
+---
+
+## 🔒 Seguridad (lo que se ha mitigado)
+
+Este es un **prototipo** y **no ha pasado una auditoría formal**. Aun así, se han aplicado las mitigaciones razonables con el tiempo disponible:
+
+- **Escucha en loopback por defecto** (`127.0.0.1`). No se puede poner `0.0.0.0` por error: hay que definirlo a propósito en `NEXUS_HOST` o editar el `.py`.
+- **`ADMIN_PASSWORD` por defecto (`admin123`) avisa en el log.** Cámbialo en `.env` antes de usar.
+- **`JWT_SECRET` autogenerado si no se define.** No es inseguro, pero invalida tokens al reiniciar. Defínelo en `.env`.
+- **Bypass de loopback** (`NEXUS_LOCAL_NOAUTH=1`) valida `Host`, `Origin`, `Sec-Fetch-Site` y rechaza `X-Forwarded-For`. No se puede saltar con un proxy mal configurado si lo pones a `0` en producción.
+- **SQL parametrizado** (`?`): no hay concatenación, no hay SQL injection clásica.
+- **Jinja2 con `autoescape=True`** y `esc()` en JS: el contenido externo se escapa antes de insertarse.
+- **`_safe_url()`**: solo permite `http(s)://`, bloquea `javascript:` en enlaces externos.
+- **URLs de malware defangeadas**: no hay clic accidental a C2 desde el panel.
+- **Sin ejecución de código remoto**: los datos externos se tratan como texto.
+- **`.gitignore`** excluye `.env`, `*.db`, `.cache/`, `intel/`, `GeoLite2-City.mmdb`.
+
+**Si encuentras una vulnerabilidad**, abre un aviso privado (ver `SECURITY.md`). **No abras un issue público con detalles explotables.**
 
 ---
 
@@ -297,14 +339,19 @@ Overlay de análisis global (`j` o botón **JARVIS**) con:
 Auth: `Authorization: Bearer <jwt>` o HTTP Basic. Desde `127.0.0.1` sin proxy el dashboard no pide login (`NEXUS_LOCAL_NOAUTH=1`).
 
 ---
-## 🤖 Bot de Telegram (experimental)
 
-> ⚠️ **En pruebas.** Los comandos funcionan, pero el bot puede cambiar entre versiones. No lo uses como único canal de alertas en producción.
+## 🤖 Bot de Telegram (⚠️ sin probar)
+
+> ⚠️ **NO se ha probado.** El código está escrito, pero no se ha ejecutado de principio a fin. **No se sabe si funciona.** **Se arreglará otro día.** Mientras tanto, el resto del sistema funciona sin él: si no defines `TELEGRAM_BOT_TOKEN`, el bot no arranca y todo lo demás sigue igual.
 
 Comandos previstos: `/start`, `/help`, `/brief`, `/sweep`, `/stats`, `/top`, `/health`, `/anomalies`, `/export`, `/search <q>`, `/domains`, `/trends`, `/watch`.
 
-Requiere `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` en `.env`. Sin ellos, el bot simplemente no arranca (el resto del sistema sigue funcionando).
+Requiere `TELEGRAM_BOT_TOKEN` y `TELEGRAM_CHAT_ID` en `.env`. Si lo pruebas y falla, abre un issue con:
+- Comando usado.
+- Salida del log (`nexus.log`).
+- Versión de Python.
 
+**Nota:** el bot está en la lista de tareas pendientes. **Hay que descansar.** Se arreglará cuando haya tiempo.
 
 ---
 
@@ -348,7 +395,7 @@ nexus.py
 | "Mapa 2D de reserva" | WebGL deshabilitado o deck.gl no cargó desde CDN | Activa WebGL o sirve deck.gl localmente (`NEXUS_DECK_URL`) |
 | Una fuente da 0 eventos | Falta API key o no se pudo geolocalizar | Revisa `.env` y la pestaña **🩺 Fuentes** (🔑 = falta clave) |
 | "circuit open" en una fuente | 5 fallos seguidos → pausada 5 min | **🔌 Reiniciar circuit breakers** en la pestaña Fuentes |
-| El bot de Telegram no responde | Falta `TELEGRAM_BOT_TOKEN` o `TELEGRAM_CHAT_ID` | Configúralos en `.env` y reinicia |
+| El bot de Telegram no responde | **No está probado; puede no funcionar** | Está en la lista de pendientes. **Se arreglará otro día.** Mientras, usa el dashboard. |
 | Error de migración de BD | BD creada con versión anterior | Se migra sola al arrancar; si falla, borra `nexus.db` y reinicia (pierdes histórico) |
 | Puerto 8000 ocupado | Instancia anterior no cerrada | Nexus_Osint_X usa el siguiente libre (8001, 8002…) y lo dice en el log |
 | `sqlite3.IntegrityError` en eventos | Duplicado por `raw_hash` (normal) | Se ignora silenciosamente; no es un error |
@@ -368,7 +415,6 @@ nexus.py
 ├── README.md
 ├── CONTRIBUTING.md
 ├── SECURITY.md
-└── (opcional) GeoLite2-City.mmdb   # NO se sube: añádelo a mano
 ```
 
 ---
@@ -380,6 +426,8 @@ Nexus_Osint_X agrega **fuentes públicas** (feeds de seguridad, agencias guberna
 Úsalo solo para **investigación defensiva, monitorización de amenazas o docencia**, cumpliendo las leyes de tu jurisdicción y los términos de cada API. El autor no se responsabiliza del uso indebido.
 
 Los indicadores (IPs, hashes, URLs) se muestran _defangeados_ (`hxxp://ejemplo[.]com`) para evitar clics accidentales.
+
+**Este es un prototipo.** No es un producto terminado. Algunas partes (como el bot de Telegram) **no se han probado**. Úsalo bajo tu responsabilidad y no lo despliegues en producción sin revisarlo antes.
 
 ---
 
@@ -450,5 +498,15 @@ Si eres responsable de una de estas fuentes y quieres que ajuste la atribución,
 
 MIT — ver LICENSE.
 
-**Condor2026**
+---
 
+## 💤 Nota final
+
+Este es un **prototipo** hecho con el tiempo y los medios disponibles. **Hice todo lo que pude** con lo que tenía, priorizando que el núcleo funcionara antes que los extras.
+
+**El bot de Telegram no se ha probado** y **no se sabe si funciona**. **Se arreglará otro día. Hay que descansar.**
+
+Si algo no funciona, abre un issue con el log y la versión. Si algo funciona, disfrútalo. Si algo falla y sabes arreglarlo, manda un PR.
+
+Gracias por pasarte. Deja una estrella si te gusto el proyecto. 
+- Condor2026
