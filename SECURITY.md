@@ -1,6 +1,6 @@
 # Política de Seguridad
 
-**NEXUS OSINT Command Center** · v3.1
+**NEXUS OSINT X Command Center** · v3.1
 Última revisión: 2026-10-30
 
 ---
