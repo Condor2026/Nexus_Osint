@@ -21,7 +21,7 @@ Solo se aceptan reportes sobre la rama `main` y la última release etiquetada. L
 **No abras un issue público con detalles explotables.** Usa uno de estos canales:
 
 1. **GitHub Security Advisory** (preferido): pestaña *Security → Report a vulnerability* del repositorio.
-2. **Email:** `<tu-email>` (sustitúyelo antes de publicar).
+   **SpectrumSecIt@proton.me**
 
 Incluye en el reporte:
 
@@ -107,7 +107,7 @@ NEXUS está pensado para ejecutarse en **localhost** o tras un proxy inverso con
 - **Cambia `ADMIN_PASSWORD`** y genera un `JWT_SECRET` aleatorio (`python -c "import secrets; print(secrets.token_hex(32))"`).
 - **No expongas el puerto 8000 directamente a Internet.** Usa un proxy inverso con TLS (Caddy, nginx, Traefik) y desactiva `NEXUS_LOCAL_NOAUTH=0`.
 - **Revisa que `.env`, `nexus.db`, `*.db-wal`, `*.db-shm` y `.cache/` no estén en el repo** ni en backups públicos (el `.gitignore` los excluye por defecto).
-- **Rota las API keys** (`OPENAI_API_KEY`, `ABUSECH_AUTH_KEY`, `CLOUDFLARE_API_TOKEN`, `TELEGRAM_BOT_TOKEN`, etc.) si sospechas filtración. Dan acceso a tus cuotas.
+- **Rota las API keys** (`OPENAI_API_KEY`, `ABUSECH_AUTH_KEY`, `CLOUDFLARE_API_TOKEN`, `TELEGRAM_BOT_TOKEN`, etc.) 
 - **El bypass de loopback** (`NEXUS_LOCAL_NOAUTH=1`, por defecto) valida `Host`, `Origin`, `Sec-Fetch-Site` y rechaza peticiones con `X-Forwarded-For`, pero un proxy mal configurado puede saltárselo. **En producción ponlo a `0`.**
 - **Limita el acceso** al panel por IP o VPN si lo despliegas en una red compartida.
 - **Revisa los logs** (`nexus.log`) y la tabla `audit_log` para detectar accesos anómalos.
@@ -149,7 +149,7 @@ NEXUS está pensado para ejecutarse en **localhost** o tras un proxy inverso con
 
 - **Seguridad:** `SpectrumSecIt@proton.me` (sustitúyelo antes de publicar).
 - **Issues no sensibles:** pestaña *Issues* del repositorio.
-- **Repositorio:** `https://github.com/Condor2026/Nexus_Osint`.
+- **Repositorio:** `https://github.com/Condor2026/Nexus_Osint_X`.
 - **Condor2026**
 
 ---
